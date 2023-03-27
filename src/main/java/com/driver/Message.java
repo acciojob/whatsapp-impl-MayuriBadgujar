@@ -8,7 +8,7 @@ public class Message {
     private Date timestamp;
 
     //default constructor
-    public Message() {
+    public Message(int messageId, String content) {
     }
 
     //all agrs constructor
@@ -18,8 +18,7 @@ public class Message {
         this.timestamp = timestamp;
     }
 
-    public Message(int messageId, String content) {
-    }
+
 
     //setters and getters
 

@@ -39,10 +39,7 @@ public class WhatsappRepository {
     }
 
     public Group createGroup(List<User> users) {
-      //  Group group;
-
         String groupName = "";
-
         if(users.size()==2){              // personal chat
             groupName = users.get(1).getName();
         }else{                              // group
@@ -105,7 +102,7 @@ public class WhatsappRepository {
             if(senderMap.get(m).equals(user)){
                 senderMap.remove(m);
                 groupMessageMap.get(gp).remove(m);
-                groupMessageMap.remove(m.getId());
+
             }
         }
 
